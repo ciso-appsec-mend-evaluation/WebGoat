@@ -1,0 +1,263 @@
+{
+  "vulnerabilities": [
+    {
+      "category": "sast",
+      "message": "Trust Boundary Violation",
+      "cve": "",
+      "scanner": {
+        "id": "baseline",
+        "name": "baseline"
+      },
+      "location": {
+        "file": "src/main/java/org/owasp/webgoat/lessons/cryptography/EncodingAssignment.java",
+        "start_line": 53,
+        "end_line": 54
+      },
+      "identifiers": [
+        {
+          "type": "cwe",
+          "name": "CWE-501",
+          "value": "501",
+          "url": "https://cwe.mitre.org/data/definitions/501.html"
+        }
+      ]
+    },
+    {
+      "category": "sast",
+      "message": "Predictable pseudorandom number generator",
+      "cve": "",
+      "scanner": {
+        "id": "baseline",
+        "name": "baseline"
+      },
+      "location": {
+        "file": "src/main/java/org/owasp/webgoat/lessons/cryptography/EncodingAssignment.java",
+        "start_line": 52
+      },
+      "identifiers": [
+        {
+          "type": "cwe",
+          "name": "CWE-330",
+          "value": "330",
+          "url": "https://cwe.mitre.org/data/definitions/330.html"
+        }
+      ]
+    },
+    {
+      "category": "sast",
+      "message": "Unsafe hash equals",
+      "cve": "",
+      "scanner": {
+        "id": "baseline",
+        "name": "baseline"
+      },
+      "location": {
+        "file": "src/main/java/org/owasp/webgoat/lessons/missing_ac/MissingFunctionACYourHash.java",
+        "start_line": 48
+      },
+      "identifiers": [
+        {
+          "type": "cwe",
+          "name": "CWE-203",
+          "value": "203",
+          "url": "https://cwe.mitre.org/data/definitions/203.html"
+        }
+      ]
+    },
+    {
+      "category": "sast",
+      "message": "Cookie without the HttpOnly flag",
+      "cve": "",
+      "scanner": {
+        "id": "baseline",
+        "name": "baseline"
+      },
+      "location": {
+        "file": "src/main/java/org/owasp/webgoat/lessons/spoofcookie/SpoofCookieAssignment.java",
+        "start_line": 93,
+        "end_line": 96
+      },
+      "identifiers": [
+        {
+          "type": "cwe",
+          "name": "CWE-1004",
+          "value": "1004",
+          "url": "https://cwe.mitre.org/data/definitions/1004.html"
+        }
+      ]
+    },
+    {
+      "id": "ef3e0db90f872e730f3ac885b8a4bf53295565e1e5b86d5b4aaa7070668b9d3a",
+      "message": "Sensitive Cookie Without 'HttpOnly' Flag",
+      "cve": "",
+      "severity": "Medium",
+      "scanner": {
+        "id": "baseline",
+        "name": "baseline"
+      },
+      "location": {
+        "file": "src/main/java/org/owasp/webgoat/lessons/spoofcookie/SpoofCookieAssignment.java",
+        "start_line": 79,
+        "end_line": 81
+      },
+      "identifiers": [
+        {
+          "type": "cwe",
+          "name": "CWE-1004",
+          "value": "1004",
+          "url": "https://cwe.mitre.org/data/definitions/1004.html"
+        }
+      ]
+    },
+    {
+      "category": "sast",
+      "message": "Improper handling of Unicode transformations",
+      "cve": "",
+      "scanner": {
+        "id": "baseline",
+        "name": "baseline"
+      },
+      "location": {
+        "file": "src/main/java/org/owasp/webgoat/lessons/spoofcookie/SpoofCookieAssignment.java",
+        "start_line": 85
+      },
+      "identifiers": [
+        {
+          "type": "cwe",
+          "name": "CWE-176",
+          "value": "176",
+          "url": "https://cwe.mitre.org/data/definitions/176.html"
+        }
+      ]
+    },
+    {
+      "category": "sast",
+      "message": "Spring CSRF unrestricted RequestMapping",
+      "cve": "",
+      "scanner": {
+        "id": "baseline",
+        "name": "baseline"
+      },
+      "location": {
+        "file": "src/main/java/org/owasp/webgoat/lessons/http_proxies/HttpBasicsInterceptRequest.java",
+        "start_line": 44,
+        "end_line": 50
+      },
+      "identifiers": [
+        {
+          "type": "cwe",
+          "name": "CWE-352",
+          "value": "352",
+          "url": "https://cwe.mitre.org/data/definitions/352.html"
+        }
+      ]
+    },
+    {
+      "category": "sast",
+      "message": "Improper handling of Unicode transformations",
+      "cve": "",
+      "scanner": {
+        "id": "baseline",
+        "name": "baseline"
+      },
+      "location": {
+        "file": "src/main/java/org/owasp/webgoat/lessons/http_proxies/HttpBasicsInterceptRequest.java",
+        "start_line": 47
+      },
+      "identifiers": [
+        {
+          "type": "cwe",
+          "name": "CWE-176",
+          "value": "176",
+          "url": "https://cwe.mitre.org/data/definitions/176.html"
+        }
+      ]
+    },
+    {
+      "category": "sast",
+      "message": "Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection')",
+      "cve": "",
+      "severity": "Medium",
+      "scanner": {
+        "id": "baseline",
+        "name": "baseline"
+      },
+      "location": {
+        "file": "src/main/java/org/owasp/webgoat/lessons/sql_injection/introduction/SqlInjectionLesson5b.java",
+        "start_line": 56,
+        "end_line": 58
+      },
+      "identifiers": [
+        {
+          "type": "cwe",
+          "name": "CWE-89",
+          "value": "89",
+          "url": "https://cwe.mitre.org/data/definitions/89.html"
+        }
+      ]
+    },
+    {
+      "category": "sast",
+      "message": "HTTP headers untrusted",
+      "cve": "",
+      "scanner": {
+        "id": "baseline",
+        "name": "baseline"
+      },
+      "location": {
+        "file": "src/main/java/org/owasp/webgoat/lessons/xss/DOMCrossSiteScripting.java",
+        "start_line": 47
+      },
+      "identifiers": [
+        {
+          "type": "cwe",
+          "name": "CWE-644",
+          "value": "644",
+          "url": "https://cwe.mitre.org/data/definitions/644.html"
+        }
+      ]
+    },
+    {
+      "category": "sast",
+      "message": "Potential Path Traversal (file read)",
+      "cve": "",
+      "scanner": {
+        "id": "baseline",
+        "name": "baseline"
+      },
+      "location": {
+        "file": "src/main/java/org/owasp/webgoat/lessons/challenges/challenge7/MD5.java",
+        "start_line": 54
+      },
+      "identifiers": [
+        {
+          "type": "cwe",
+          "name": "CWE-22",
+          "value": "22",
+          "url": "https://cwe.mitre.org/data/definitions/22.html"
+        }
+      ]
+    },
+    {
+      "category": "sast",
+      "message": "Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection')",
+      "cve": "",
+      "scanner": {
+        "id": "baseline",
+        "name": "baseline"
+      },
+      "location": {
+        "file": "src/main/java/org/owasp/webgoat/lessons/challenges/challenge5/Assignment5.java",
+        "start_line": 59
+      },
+      "identifiers": [
+        {
+          "type": "cwe",
+          "name": "CWE-89",
+          "value": "89",
+          "url": "https://cwe.mitre.org/data/definitions/89.html"
+        }
+      ]
+    }
+  ]
+}
