@@ -11,7 +11,7 @@
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
-        <version>2.7.1</version>
+        <version>2.7.18</version>
     </parent>
 
     <name>WebGoat</name>
@@ -121,30 +121,30 @@
         <!-- Shared properties with plugins and version numbers across submodules-->
         <asciidoctorj.version>2.5.3</asciidoctorj.version>
         <bootstrap.version>3.3.7</bootstrap.version>
-        <cglib.version>2.2</cglib.version> <!-- do not update necessary for lesson -->
-        <checkstyle.version>3.1.2</checkstyle.version>
+        <cglib.version>2.2.2</cglib.version> <!-- do not update necessary for lesson -->
+        <checkstyle.version>3.5.0</checkstyle.version>
         <commons-collections.version>3.2.1</commons-collections.version>
         <commons-lang3.version>3.12.0</commons-lang3.version>
         <commons-io.version>2.6</commons-io.version>
-        <commons-text.version>1.9</commons-text.version>
+        <commons-text.version>1.12.0</commons-text.version>
         <guava.version>30.1-jre</guava.version>
         <jjwt.version>0.9.1</jjwt.version>
-        <jose4j.version>0.7.6</jose4j.version>
-        <jsoup.version>1.14.3</jsoup.version>
-        <jquery.version>3.5.1</jquery.version>
+        <jose4j.version>0.9.6</jose4j.version>
+        <jsoup.version>1.18.1</jsoup.version>
+        <jquery.version>3.7.1</jquery.version>
         <maven-compiler-plugin.version>3.8.0</maven-compiler-plugin.version>
         <maven-failsafe-plugin.version>2.22.0</maven-failsafe-plugin.version>
         <maven-jar-plugin.version>3.1.2</maven-jar-plugin.version>
         <maven-javadoc-plugin.version>3.1.1</maven-javadoc-plugin.version>
         <maven-source-plugin.version>3.1.0</maven-source-plugin.version>
-        <maven-surefire-plugin.version>3.0.0-M5</maven-surefire-plugin.version>
+        <maven-surefire-plugin.version>3.5.1</maven-surefire-plugin.version>
         <pmd.version>3.15.0</pmd.version>
         <thymeleaf.version>3.0.15.RELEASE</thymeleaf.version>
-        <webdriver.version>4.3.1</webdriver.version>
+        <webdriver.version>4.4.3</webdriver.version>
         <wiremock.version>2.27.2</wiremock.version>
         <xml-resolver.version>1.2</xml-resolver.version>
-        <xstream.version>1.4.5</xstream.version> <!-- do not update necessary for lesson -->
-        <zxcvbn.version>1.5.2</zxcvbn.version>
+        <xstream.version>1.4.20</xstream.version> <!-- do not update necessary for lesson -->
+        <zxcvbn.version>1.9.0</zxcvbn.version>
     </properties>
 
     <dependencyManagement>
@@ -240,7 +240,7 @@
             <dependency>
                 <groupId>org.apache.commons</groupId>
                 <artifactId>commons-compress</artifactId>
-                <version>1.21</version>
+                <version>1.27.1</version>
             </dependency>
             <dependency>
                 <groupId>org.jruby</groupId>
@@ -620,7 +620,7 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-enforcer-plugin</artifactId>
-                <version>3.0.0</version>
+                <version>3.5.0</version>
                 <executions>
                     <execution>
                         <id>restrict-log4j-versions</id>
