@@ -1,0 +1,5 @@
+1.    public static final String JWT_SECRET = TextCodec.BASE64.encode(SECRETS[new Random().nextInt(SECRETS.length)]); in src/main/java/org/owasp/webgoat/lessons/jwt/JWTSecretKeyEndpoint.java:55 looks insecure, because of very basic encoding and a predictable random generator, together with exposed secrets on line 54 this looks like multiple vulnerabilities. I would like to group it together into one, but I am unsure which one would fit here.
+
+I was thinking https://cwe.mitre.org/data/definitions/326.html for line 55, because of base64 and https://cwe.mitre.org/data/definitions/321.html for exposing the secrets, I don't think insecure random generator is a vulnerability here.
+
+2. Since cookies in this directory carry sensitive information (access_token), I put three vulnerabilities (539, 1004, 614), is that correct?

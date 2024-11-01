@@ -1,0 +1,198 @@
+{
+    "vulnerabilities": [
+        {
+            "category": "sast",
+            "description": "The method identified is susceptible to injection. The input should be validated and properly\nescaped.\n",
+            "cve": "",
+            "scanner": {
+                "id": "baseline",
+                "name": "baseline"
+            },
+            "location": {
+                "file": "WebGoat/src/main/java/org/owasp/webgoat/lessons/jwt/JWTFinalEndpoint.java",
+                "start_line": 94
+            },
+            "identifiers": [
+                {
+                    "type": "cwe",
+                    "name": "CWE-89",
+                    "value": "89",
+                    "url": "https://cwe.mitre.org/data/definitions/89.html"
+                }
+            ]
+        },
+        {
+            "category": "sast",
+            "description": "Cryptographic keys should not be kept in the source code. The source code can be widely shared\nin an enterprise environment, and is certainly shared in open source. To be managed safely,\npasswords and secret keys should be stored in separate configuration files or keystores.\n",
+            "cve": "",
+            "scanner": {
+                "id": "baseline",
+                "name": "baseline"
+            },
+            "location": {
+                "file": "WebGoat/src/main/java/org/owasp/webgoat/lessons/jwt/JWTRefreshEndpoint.java",
+                "start_line": 62
+            },
+            "identifiers": [
+                {
+                    "type": "cwe",
+                    "name": "CWE-321",
+                    "value": "321",
+                    "url": "https://cwe.mitre.org/data/definitions/321.html"
+                }
+            ]
+        },
+        {
+            "category": "sast",
+            "description": "Cryptographic keys should not be kept in the source code. The source code can be widely shared\nin an enterprise environment, and is certainly shared in open source. To be managed safely,\npasswords and secret keys should be stored in separate configuration files or keystores.\n",
+            "cve": "",
+            "scanner": {
+                "id": "baseline",
+                "name": "baseline"
+            },
+            "location": {
+                "file": "WebGoat/src/main/java/org/owasp/webgoat/lessons/jwt/JWTRefreshEndpoint.java",
+                "start_line": 61
+            },
+            "identifiers": [
+                {
+                    "type": "cwe",
+                    "name": "CWE-321",
+                    "value": "321",
+                    "url": "https://cwe.mitre.org/data/definitions/321.html"
+                }
+            ]
+        },
+        {
+            "category": "sast",
+            "description": "\"Storing sensitive data in a persistent cookie for an extended period can lead to a breach of\nconfidentiality or account compromise.\"\n",
+            "cve": "",
+            "scanner": {
+                "id": "baseline",
+                "name": "baseline"
+            },
+            "location": {
+                "file": "WebGoat/src/main/java/org/owasp/webgoat/lessons/jwt/JWTVotesEndpoint.java",
+                "start_line": 105,
+                "end_line": 108
+            },
+            "identifiers": [
+                {
+                    "type": "cwe",
+                    "name": "CWE-539",
+                    "value": "539",
+                    "url": "https://cwe.mitre.org/data/definitions/539.html"
+                }
+            ]
+        },
+        {
+            "category": "sast",
+            "description": "Cookie without the secure flag could be sent in clear text if a HTTP URL is visited",
+            "cve": "",
+            "scanner": {
+                "id": "baseline",
+                "name": "baseline"
+            },
+            "location": {
+                "file": "WebGoat/src/main/java/org/owasp/webgoat/lessons/jwt/JWTVotesEndpoint.java",
+                "start_line": 105,
+                "end_line": 108
+            },
+            "identifiers": [
+                {
+                    "type": "cwe",
+                    "name": "CWE-614",
+                    "value": "614",
+                    "url": "https://cwe.mitre.org/data/definitions/614.html"
+                }
+            ]
+        },
+        {
+            "category": "sast",
+            "description": "Cookie without the HttpOnly flag could be read by a malicious script in the browser",
+            "cve": "",
+            "scanner": {
+                "id": "baseline",
+                "name": "baseline"
+            },
+            "location": {
+                "file": "WebGoat/src/main/java/org/owasp/webgoat/lessons/jwt/JWTVotesEndpoint.java",
+                "start_line": 105,
+                "end_line": 108
+            },
+            "identifiers": [
+                {
+                    "type": "cwe",
+                    "name": "CWE-1004",
+                    "value": "1004",
+                    "url": "https://cwe.mitre.org/data/definitions/1004.html"
+                }
+            ]
+        },
+        {
+            "category": "sast",
+            "description": "Unrestricted Spring's RequestMapping makes the method vulnerable to CSRF attacks",
+            "cve": "",
+            "scanner": {
+                "id": "baseline",
+                "name": "baseline"
+            },
+            "location": {
+                "file": "src/main/java/org/owasp/webgoat/lessons/jwt/JWTSecretKeyEndpoint.java",
+                "start_line": 59,
+                "end_line": 62
+            },
+            "identifiers": [
+                {
+                    "type": "cwe",
+                    "name": "CWE-352",
+                    "value": "352",
+                    "url": "https://cwe.mitre.org/data/definitions/352.html"
+                }
+            ]
+        },
+        {
+            "category": "sast",
+            "description": "Insufficiently Protected Credentials",
+            "cve": "",
+            "scanner": {
+                "id": "baseline",
+                "name": "baseline"
+            },
+            "location": {
+                "file": "src/main/java/org/owasp/webgoat/lessons/jwt/JWTSecretKeyEndpoint.java",
+                "start_line": 54,
+                "end_line": 55
+            },
+            "identifiers": [
+                {
+                    "type": "cwe",
+                    "name": "CWE-522",
+                    "value": "522",
+                    "url": "https://cwe.mitre.org/data/definitions/522.html"
+                }
+            ]
+        },
+        {
+            "category": "sast",
+            "description": "Inadequate encryption strength",
+            "cve": "",
+            "scanner": {
+                "id": "baseline",
+                "name": "baseline"
+            },
+            "location": {
+                "file": "src/main/java/org/owasp/webgoat/lessons/jwt/JWTSecretKeyEndpoint.java",
+                "start_line": 55
+            },
+            "identifiers": [
+                {
+                    "type": "cwe",
+                    "name": "CWE-326",
+                    "value": "326",
+                    "url": "https://cwe.mitre.org/data/definitions/326.html"
+                }
+            ]
+        }
+    ]
+}

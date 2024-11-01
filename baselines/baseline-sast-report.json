@@ -1,0 +1,21 @@
+{
+    "category": "sast",
+    "description": "hardcoded credentials",
+    "cve": "",
+    "scanner": {
+        "id": "baseline",
+        "name": "baseline"
+    },
+    "location": {
+        "file": "WebGoat/src/main/java/org/owasp/webgoat/lessons/insecure_login/InsecureLoginTask.java",
+        "start_line": 36
+    },
+    "identifiers": [
+        {
+            "type": "cwe",
+            "name": "CWE-259",
+            "value": "259",
+            "url": "https://cwe.mitre.org/data/definitions/259.html"
+        }
+    ]
+}

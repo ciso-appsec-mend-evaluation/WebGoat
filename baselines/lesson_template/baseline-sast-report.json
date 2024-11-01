@@ -1,0 +1,25 @@
+{
+    "vulnerabilities": [
+        {
+            "category": "sast",
+            "description": "Cryptographic keys should not be kept in the source code. The source code can be widely shared\nin an enterprise environment, and is certainly shared in open source. To be managed safely,\npasswords and secret keys should be stored in separate configuration files or keystores.\n",
+            "cve": "",
+            "scanner": {
+                "id": "baseline",
+                "name": "baseline"
+            },
+            "location": {
+                "file": "src/main/java/org/owasp/webgoat/lessons/lesson_template/SampleAttack.java",
+                "start_line": 48
+            },
+            "identifiers": [
+                {
+                    "type": "cwe",
+                    "name": "CWE-321",
+                    "value": "321",
+                    "url": "https://cwe.mitre.org/data/definitions/321.html"
+                }
+            ]
+        }
+    ]
+}

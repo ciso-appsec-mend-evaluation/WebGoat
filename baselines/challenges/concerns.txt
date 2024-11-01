@@ -1,0 +1,108 @@
+1. This is possibly false positive?
+
+{
+      "id": "4e88cf804274b8b6a2bf6a8ca4749345356a79dc49d8e51057bcf3b053846fa1",
+      "category": "sast",
+      "message": "Use of Hard-coded Cryptographic Key",
+      "description": "Cryptographic keys should not be kept in the source code. The source code can be widely shared\nin an enterprise environment, and is certainly shared in open source. To be managed safely,\npasswords and secret keys should be stored in separate configuration files or keystores.\n",
+      "cve": "",
+      "severity": "Medium",
+      "scanner": {
+        "id": "semgrep",
+        "name": "Semgrep"
+      },
+      "location": {
+        "file": "src/main/java/org/owasp/webgoat/lessons/challenges/challenge7/Assignment7.java",
+        "start_line": 37,
+        "end_line": 44
+      },
+      "identifiers": [
+        {
+          "type": "semgrep_id",
+          "name": "find_sec_bugs.HARD_CODE_KEY-3",
+          "value": "find_sec_bugs.HARD_CODE_KEY-3"
+        },
+        {
+          "type": "cwe",
+          "name": "CWE-321",
+          "value": "321",
+          "url": "https://cwe.mitre.org/data/definitions/321.html"
+        },
+        {
+          "type": "find_sec_bugs_type",
+          "name": "Find Security Bugs-HARD_CODE_KEY",
+          "value": "HARD_CODE_KEY"
+        }
+      ],
+      "tracking": {
+        "type": "source",
+        "items": [
+          {
+            "file": "src/main/java/org/owasp/webgoat/lessons/challenges/challenge7/Assignment7.java",
+            "line_start": 37,
+            "line_end": 37,
+            "signatures": [
+              {
+                "algorithm": "scope_offset",
+                "value": "src/main/java/org/owasp/webgoat/lessons/challenges/challenge7/Assignment7.java|Assignment7[0]:4"
+              }
+            ]
+          }
+        ]
+      }
+
+
+2. Is this a false positive?
+
+{
+      "id": "54b061ce2c493e3ddc6c3bc7ef5ab2bbe930e04182e146afd1bac802bab891c3",
+      "category": "sast",
+      "message": "Use of Hard-coded Password",
+      "description": "Passwords should not be kept in the source code. The source code can be widely shared in an\nenterprise environment, and is certainly shared in open source. To be managed safely, passwords\nand secret keys should be stored in separate configuration files or keystores.\n",
+      "cve": "",
+      "severity": "Critical",
+      "scanner": {
+        "id": "semgrep",
+        "name": "Semgrep"
+      },
+      "location": {
+        "file": "src/main/java/org/owasp/webgoat/lessons/challenges/challenge7/PasswordResetLink.java",
+        "start_line": 23,
+        "end_line": 30
+      },
+      "identifiers": [
+        {
+          "type": "semgrep_id",
+          "name": "find_sec_bugs.HARD_CODE_PASSWORD-1",
+          "value": "find_sec_bugs.HARD_CODE_PASSWORD-1"
+        },
+        {
+          "type": "cwe",
+          "name": "CWE-259",
+          "value": "259",
+          "url": "https://cwe.mitre.org/data/definitions/259.html"
+        },
+        {
+          "type": "find_sec_bugs_type",
+          "name": "Find Security Bugs-HARD_CODE_PASSWORD",
+          "value": "HARD_CODE_PASSWORD"
+        }
+      ],
+      "tracking": {
+        "type": "source",
+        "items": [
+          {
+            "file": "src/main/java/org/owasp/webgoat/lessons/challenges/challenge7/PasswordResetLink.java",
+            "line_start": 23,
+            "line_end": 23,
+            "signatures": [
+              {
+                "algorithm": "scope_offset",
+                "value": "src/main/java/org/owasp/webgoat/lessons/challenges/challenge7/PasswordResetLink.java|PasswordResetLink[0]|String[1]:1"
+              }
+            ]
+          }
+        ]
+      }
+    }
+    

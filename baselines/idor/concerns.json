@@ -1,0 +1,34 @@
+{ // COnsidering the input is a message of exception, which is not using the user output, this should be a FP?
+    "id": "929bfbea9292d98449a85534423ee0e8b5a439f23845a2b3dae2b0461afa63b9",
+    "category": "sast",
+    "name": "Potential CRLF Injection for logs",
+    "message": "Potential CRLF Injection for logs",
+    "description": "This use of org/slf4j/Logger.error(Ljava/lang/String;Ljava/lang/Object;)V might be used to include CRLF characters into log messages",
+    "cve": "d61340638827d20b4a8917d18e3a9c1d:CRLF_INJECTION_LOGS:src/main/java/org/owasp/webgoat/lessons/idor/IDORViewOwnProfile.java:61",
+    "severity": "Low",
+    "confidence": "Low",
+    "scanner": {
+        "id": "find_sec_bugs",
+        "name": "Find Security Bugs"
+    },
+    "location": {
+        "file": "src/main/java/org/owasp/webgoat/lessons/idor/IDORViewOwnProfile.java",
+        "start_line": 61,
+        "class": "org.owasp.webgoat.lessons.idor.IDORViewOwnProfile",
+        "method": "invoke"
+    },
+    "identifiers": [
+        {
+            "type": "find_sec_bugs_type",
+            "name": "Find Security Bugs-CRLF_INJECTION_LOGS",
+            "value": "CRLF_INJECTION_LOGS",
+            "url": "https://find-sec-bugs.github.io/bugs.htm#CRLF_INJECTION_LOGS"
+        },
+        {
+            "type": "cwe",
+            "name": "CWE-117",
+            "value": "117",
+            "url": "https://cwe.mitre.org/data/definitions/117.html"
+        }
+    ]
+}

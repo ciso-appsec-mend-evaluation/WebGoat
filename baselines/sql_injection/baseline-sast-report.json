@@ -1,0 +1,393 @@
+{
+    "vulnerabilities": [
+        {
+            "category": "sast",
+            "description": "The method identified is susceptible to injection. The input should be validated and properly\nescaped.\n",
+            "cve": "",
+            "scanner": {
+                "id": "baseline",
+                "name": "baseline"
+            },
+            "location": {
+                "file": "src/main/java/org/owasp/webgoat/lessons/sql_injection/advanced/SqlInjectionChallenge.java",
+                "start_line": 63
+            },
+            "identifiers": [
+                {
+                    "type": "cwe",
+                    "name": "CWE-89",
+                    "value": "89",
+                    "url": "https://cwe.mitre.org/data/definitions/89.html"
+                }
+            ]
+        },
+        {
+            "category": "sast",
+            "description": "The method identified is susceptible to injection. The input should be validated and properly\nescaped.\n",
+            "cve": "",
+            "scanner": {
+                "id": "baseline",
+                "name": "baseline"
+            },
+            "location": {
+                "file": "src/main/java/org/owasp/webgoat/lessons/sql_injection/advanced/SqlInjectionLesson6a.java",
+                "start_line": 60,
+                "end_line": 67
+            },
+            "identifiers": [
+                {
+                    "type": "cwe",
+                    "name": "CWE-89",
+                    "value": "89",
+                    "url": "https://cwe.mitre.org/data/definitions/89.html"
+                }
+            ]
+        },
+        { // Imo this is an FP, since user has no control over query string
+            "category": "sast",
+            "description": "The method identified is susceptible to injection. The input should be validated and properly\nescaped.\n",
+            "cve": "",
+            "scanner": {
+                "id": "baseline",
+                "name": "baseline"
+            },
+            "location": {
+                "file": "src/main/java/org/owasp/webgoat/lessons/sql_injection/advanced/SqlInjectionLesson6b.java",
+                "start_line": 63,
+                "end_line": 67
+            },
+            "identifiers": [
+                {
+                    "type": "cwe",
+                    "name": "CWE-89",
+                    "value": "89",
+                    "url": "https://cwe.mitre.org/data/definitions/89.html"
+                }
+            ]
+        },
+        {
+            "category": "sast",
+            "description": "Cryptographic keys should not be kept in the source code. The source code can be widely shared\nin an enterprise environment, and is certainly shared in open source. To be managed safely,\npasswords and secret keys should be stored in separate configuration files or keystores.\n",
+            "cve": "",
+            "scanner": {
+                "id": "baseline",
+                "name": "baseline"
+            },
+            "location": {
+                "file": "src/main/java/org/owasp/webgoat/lessons/sql_injection/advanced/SqlInjectionLesson6b.java",
+                "start_line": 61
+            },
+            "identifiers": [
+                {
+                    "type": "cwe",
+                    "name": "CWE-798",
+                    "value": "798",
+                    "url": "https://cwe.mitre.org/data/definitions/798.html"
+                }
+            ]
+        },
+        { // This could leak some potentially sensitive information, right? What about line 77?
+            "category": "sast",
+            "description": "The sensitive information may be valuable information on its own (such as a password), or it\nmay be useful for launching other, more deadly attacks. If an attack fails, an attacker may use\nerror information provided by the server to launch another more focused attack. For example, an\nattempt to exploit a path traversal weakness (CWE-22) might yield the full pathname of the\ninstalled application.\n",
+            "cve": "",
+            "scanner": {
+                "id": "baseline",
+                "name": "baseline"
+            },
+            "location": {
+                "file": "src/main/java/org/owasp/webgoat/lessons/sql_injection/advanced/SqlInjectionLesson6b.java",
+                "start_line": 72,
+                "end_line": 75
+            },
+            "identifiers": [
+                {
+                    "type": "cwe",
+                    "name": "CWE-209",
+                    "value": "209",
+                    "url": "https://cwe.mitre.org/data/definitions/209.html"
+                }
+            ]
+        },
+        {
+            "category": "sast",
+            "description": "The input values included in SQL queries need to be passed in safely. Bind\nvariables in prepared statements can be used to easily mitigate the risk of\nSQL injection.\n",
+            "cve": "",
+            "scanner": {
+                "id": "baseline",
+                "name": "baseline"
+            },
+            "location": {
+                "file": "src/main/java/org/owasp/webgoat/lessons/sql_injection/introduction/SqlInjectionLesson10.java",
+                "start_line": 58,
+                "end_line": 63
+            },
+            "identifiers": [
+                {
+                    "type": "cwe",
+                    "name": "CWE-89",
+                    "value": "89",
+                    "url": "https://cwe.mitre.org/data/definitions/89.html"
+                }
+            ]
+        },
+        {
+            "category": "sast",
+            "description": "The input values included in SQL queries need to be passed in safely. Bind\nvariables in prepared statements can be used to easily mitigate the risk of\nSQL injection.\n",
+            "cve": "",
+            "scanner": {
+                "id": "baseline",
+                "name": "baseline"
+            },
+            "location": {
+                "file": "src/main/java/org/owasp/webgoat/lessons/sql_injection/introduction/SqlInjectionLesson2.java",
+                "start_line": 62
+            },
+            "identifiers": [
+                {
+                    "type": "cwe",
+                    "name": "CWE-89",
+                    "value": "89",
+                    "url": "https://cwe.mitre.org/data/definitions/89.html"
+                }
+            ]
+        },
+        {
+            "category": "sast",
+            "description": "The input values included in SQL queries need to be passed in safely. Bind\nvariables in prepared statements can be used to easily mitigate the risk of\nSQL injection.\n",
+            "cve": "",
+            "scanner": {
+                "id": "baseline",
+                "name": "baseline"
+            },
+            "location": {
+                "file": "src/main/java/org/owasp/webgoat/lessons/sql_injection/introduction/SqlInjectionLesson3.java",
+                "start_line": 65
+            },
+            "identifiers": [
+                {
+                    "type": "cwe",
+                    "name": "CWE-89",
+                    "value": "89",
+                    "url": "https://cwe.mitre.org/data/definitions/89.html"
+                }
+            ]
+        },
+        {
+            "category": "sast",
+            "description": "The input values included in SQL queries need to be passed in safely. Bind\nvariables in prepared statements can be used to easily mitigate the risk of\nSQL injection.\n",
+            "cve": "",
+            "scanner": {
+                "id": "baseline",
+                "name": "baseline"
+            },
+            "location": {
+                "file": "src/main/java/org/owasp/webgoat/lessons/sql_injection/introduction/SqlInjectionLesson4.java",
+                "start_line": 63
+            },
+            "identifiers": [
+                {
+                    "type": "cwe",
+                    "name": "CWE-89",
+                    "value": "89",
+                    "url": "https://cwe.mitre.org/data/definitions/89.html"
+                }
+            ]
+        },
+        {
+            "category": "sast",
+            "description": "The input values included in SQL queries need to be passed in safely. Bind\nvariables in prepared statements can be used to easily mitigate the risk of\nSQL injection.\n",
+            "cve": "",
+            "scanner": {
+                "id": "baseline",
+                "name": "baseline"
+            },
+            "location": {
+                "file": "src/main/java/org/owasp/webgoat/lessons/sql_injection/introduction/SqlInjectionLesson5.java",
+                "start_line": 73
+            },
+            "identifiers": [
+                {
+                    "type": "cwe",
+                    "name": "CWE-89",
+                    "value": "89",
+                    "url": "https://cwe.mitre.org/data/definitions/89.html"
+                }
+            ]
+        },
+        {
+            "category": "sast",
+            "description": "The input values included in SQL queries need to be passed in safely. Bind\nvariables in prepared statements can be used to easily mitigate the risk of\nSQL injection.\n",
+            "cve": "",
+            "scanner": {
+                "id": "baseline",
+                "name": "baseline"
+            },
+            "location": {
+                "file": "src/main/java/org/owasp/webgoat/lessons/sql_injection/introduction/SqlInjectionLesson5a.java",
+                "start_line": 60,
+                "end_line": 62
+            },
+            "identifiers": [
+                {
+                    "type": "cwe",
+                    "name": "CWE-89",
+                    "value": "89",
+                    "url": "https://cwe.mitre.org/data/definitions/89.html"
+                }
+            ]
+        },
+        {
+            "category": "sast",
+            "description": "The input values included in SQL queries need to be passed in safely. Bind\nvariables in prepared statements can be used to easily mitigate the risk of\nSQL injection.\n",
+            "cve": "",
+            "scanner": {
+                "id": "baseline",
+                "name": "baseline"
+            },
+            "location": {
+                "file": "src/main/java/org/owasp/webgoat/lessons/sql_injection/introduction/SqlInjectionLesson5b.java",
+                "line_start": 56,
+                "line_end": 71
+            },
+            "identifiers": [
+                {
+                    "type": "cwe",
+                    "name": "CWE-89",
+                    "value": "89",
+                    "url": "https://cwe.mitre.org/data/definitions/89.html"
+                }
+            ]
+        },
+        {
+            "category": "sast",
+            "description": "The input values included in SQL queries need to be passed in safely. Bind\nvariables in prepared statements can be used to easily mitigate the risk of\nSQL injection.\n",
+            "cve": "",
+            "scanner": {
+                "id": "baseline",
+                "name": "baseline"
+            },
+            "location": {
+                "file": "src/main/java/org/owasp/webgoat/lessons/sql_injection/introduction/SqlInjectionLesson8.java",
+                "line_start": 60,
+                "line_end": 66
+            },
+            "identifiers": [
+                {
+                    "type": "cwe",
+                    "name": "CWE-89",
+                    "value": "89",
+                    "url": "https://cwe.mitre.org/data/definitions/89.html"
+                }
+            ]
+        },
+        {   // inserting using VALUES does not escaping so this is a TP, right?
+            "category": "sast",
+            "description": "The input values included in SQL queries need to be passed in safely. Bind\nvariables in prepared statements can be used to easily mitigate the risk of\nSQL injection.\n",
+            "cve": "",
+            "scanner": {
+                "id": "baseline",
+                "name": "baseline"
+            },
+            "location": {
+                "file": "src/main/java/org/owasp/webgoat/lessons/sql_injection/introduction/SqlInjectionLesson8.java",
+                "start_line": 134,
+                "end_line": 138
+            },
+            "identifiers": [
+                {
+                    "type": "cwe",
+                    "name": "CWE-89",
+                    "value": "89",
+                    "url": "https://cwe.mitre.org/data/definitions/89.html"
+                }
+            ]
+        },
+        {
+            "category": "sast",
+            "description": "The input values included in SQL queries need to be passed in safely. Bind\nvariables in prepared statements can be used to easily mitigate the risk of\nSQL injection.\n",
+            "cve": "",
+            "scanner": {
+                "id": "baseline",
+                "name": "baseline"
+            },
+            "location": {
+                "file": "src/main/java/org/owasp/webgoat/lessons/sql_injection/introduction/SqlInjectionLesson9.java",
+                "line_start": 61,
+                "line_end": 66
+            },
+            "identifiers": [
+                {
+                    "type": "cwe",
+                    "name": "CWE-89",
+                    "value": "89",
+                    "url": "https://cwe.mitre.org/data/definitions/89.html"
+                }
+            ]
+        },
+        {
+            "category": "sast",
+            "description": "The input values included in SQL queries need to be passed in safely. Bind\nvariables in prepared statements can be used to easily mitigate the risk of\nSQL injection.\n",
+            "cve": "",
+            "scanner": {
+                "id": "baseline",
+                "name": "baseline"
+            },
+            "location": {
+                "file": "src/main/java/org/owasp/webgoat/lessons/sql_injection/mitigation/Servers.java",
+                "line_start": 72
+            },
+            "identifiers": [
+                {
+                    "type": "cwe",
+                    "name": "CWE-89",
+                    "value": "89",
+                    "url": "https://cwe.mitre.org/data/definitions/89.html"
+                }
+            ]
+        },
+        {
+            "category": "sast",
+            "description": "The input values included in SQL queries need to be passed in safely. Bind\nvariables in prepared statements can be used to easily mitigate the risk of\nSQL injection.\n",
+            "cve": "",
+            "scanner": {
+                "id": "baseline",
+                "name": "baseline"
+            },
+            "location": {
+                "file": "src/main/java/org/owasp/webgoat/lessons/sql_injection/advanced/SqlInjectionLesson6a.java",
+                "start_line": 60,
+                "end_line": 67
+            },
+            "identifiers": [
+                {
+                    "type": "cwe",
+                    "name": "CWE-89",
+                    "value": "89",
+                    "url": "https://cwe.mitre.org/data/definitions/89.html"
+                }
+            ]
+        },
+        {
+            "category": "sast",
+            "description": "The input values included in SQL queries need to be passed in safely. Bind\nvariables in prepared statements can be used to easily mitigate the risk of\nSQL injection.\n",
+            "cve": "",
+            "scanner": {
+                "id": "baseline",
+                "name": "baseline"
+            },
+            "location": {
+                "file": "src/main/java/org/owasp/webgoat/lessons/sql_injection/advanced/SqlInjectionChallenge.java",
+                "start_line": 63,
+                "end_line": 65
+            },
+            "identifiers": [
+                {
+                    "type": "cwe",
+                    "name": "CWE-89",
+                    "value": "89",
+                    "url": "https://cwe.mitre.org/data/definitions/89.html"
+                }
+            ]
+        }
+    ]
+}

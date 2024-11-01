@@ -1,0 +1,26 @@
+{
+    "vulnerabilities": [
+        {
+            "category": "sast",
+            "description": "Unrestricted Spring's RequestMapping makes the method vulnerable to CSRF attacks",
+            "cve": "",
+            "scanner": {
+                "id": "baseline",
+                "name": "baseline"
+            },
+            "location": {
+                "file": "src/main/java/org/owasp/webgoat/lessons/http_proxies/HttpBasicsInterceptRequest.java",
+                "start_line": 44,
+                "end_line": 50
+            },
+            "identifiers": [
+                {
+                    "type": "cwe",
+                    "name": "CWE-352",
+                    "value": "352",
+                    "url": "https://cwe.mitre.org/data/definitions/352.html"
+                }
+            ]
+        }
+    ]
+}

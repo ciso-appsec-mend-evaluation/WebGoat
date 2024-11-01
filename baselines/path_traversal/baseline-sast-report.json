@@ -1,0 +1,207 @@
+{
+    "vulnerabilities": [
+        {
+            "category": "sast",
+            "description": "A file is opened to read its content. The filename comes from an input parameter. If an\nunfiltered parameter is passed to this file API, files from an arbitrary filesystem location\ncould be read. This rule identifies potential path traversal vulnerabilities. In many cases,\nthe constructed file path cannot be controlled by the user.\n",
+            "cve": "",
+            "scanner": {
+                "id": "baseline",
+                "name": "baseline"
+            },
+            "location": {
+                "file": "WebGoat/src/main/java/org/owasp/webgoat/lessons/path_traversal/ProfileUploadBase.java",
+                "start_line": 43
+            },
+            "identifiers": [
+                {
+                    "type": "cwe",
+                    "name": "CWE-22",
+                    "value": "22",
+                    "url": "https://cwe.mitre.org/data/definitions/22.html"
+                }
+            ]
+        },
+        {
+            "category": "sast",
+            "message": "Improper Input Validation",
+            "description": "The Servlet can read GET and POST parameters from various methods. The\nvalue obtained should be considered unsafe.\"\n",
+            "cve": "",
+            "scanner": {
+                "id": "baseline",
+                "name": "baseline"
+            },
+            "location": {
+                "file": "src/main/java/org/owasp/webgoat/lessons/path_traversal/ProfileUploadRetrieval.java",
+                "start_line": 100
+            },
+            "identifiers": [
+                {
+                    "type": "cwe",
+                    "name": "CWE-20",
+                    "value": "20",
+                    "url": "https://cwe.mitre.org/data/definitions/20.html"
+                }
+            ]
+        },
+        {
+            "category": "sast",
+            "message": "Improper Input Validation",
+            "description": "The Servlet can read GET and POST parameters from various methods. The\nvalue obtained should be considered unsafe.\"\n",
+            "cve": "",
+            "scanner": {
+                "id": "baseline",
+                "name": "baseline"
+            },
+            "location": {
+                "file": "src/main/java/org/owasp/webgoat/lessons/path_traversal/ProfileUploadRetrieval.java",
+                "start_line": 96
+            },
+            "identifiers": [
+                {
+                    "type": "cwe",
+                    "name": "CWE-20",
+                    "value": "20",
+                    "url": "https://cwe.mitre.org/data/definitions/20.html"
+                }
+            ]
+        },
+        {
+            "category": "sast",
+            "description": "The Servlet can read GET and POST parameters from various methods. The\nvalue obtained should be considered unsafe.\"\n",
+            "cve": "",
+            "scanner": {
+                "id": "baseline",
+                "name": "baseline"
+            },
+            "location": {
+                "file": "WebGoat/src/main/java/org/owasp/webgoat/lessons/path_traversal/ProfileUploadRetrieval.java",
+                "start_line": 85,
+                "end_line": 86
+            },
+            "identifiers": [
+                {
+                    "type": "cwe",
+                    "name": "CWE-707",
+                    "value": "707",
+                    "url": "https://cwe.mitre.org/data/definitions/707.html"
+                }
+            ]
+        },
+        {
+            "category": "sast",
+            "description": "\"The software uses an HTTP request parameter to construct a pathname that should be within a\nrestricted directory, but it does not properly neutralize absolute path sequences such as\n\"/abs/path\" that can resolve to a location that is outside of that directory. See\nhttp://cwe.mitre.org/data/definitions/36.html for more information.\"\n",
+            "cve": "",
+            "scanner": {
+                "id": "baseline",
+                "name": "baseline"
+            },
+            "location": {
+                "file": "src/main/java/org/owasp/webgoat/lessons/path_traversal/ProfileUploadRetrieval.java",
+                "start_line": 86
+            },
+            "identifiers": [
+                {
+                    "type": "cwe",
+                    "name": "CWE-22",
+                    "value": "22",
+                    "url": "https://cwe.mitre.org/data/definitions/22.html"
+                }
+            ]
+        },
+        {
+            "category": "sast",
+            "description": "This API (java/io/File.\u003cinit\u003e(Ljava/lang/String;Ljava/lang/String;)V) reads a file whose location might be specified by user input",
+            "cve": "",
+            "scanner": {
+                "id": "baseline",
+                "name": "baseline"
+            },
+            "location": {
+                "file": "src/main/java/org/owasp/webgoat/lessons/path_traversal/ProfileZipSlip.java",
+                "start_line": 47
+            },
+            "identifiers": [
+                {
+                    "type": "cwe",
+                    "name": "CWE-22",
+                    "value": "22",
+                    "url": "https://cwe.mitre.org/data/definitions/22.html"
+                }
+            ]
+        },
+        {
+
+            "category": "sast",
+            "description": "This API (java/io/File.\u003cinit\u003e(Ljava/lang/String;Ljava/lang/String;)V) reads a file whose location might be specified by user input",
+            "cve": "",
+            "scanner": {
+                "id": "baseline",
+                "name": "baseline"
+            },
+            "location": {
+                "file": "src/main/java/org/owasp/webgoat/lessons/path_traversal/ProfileUploadBase.java",
+                "start_line": 75
+            },
+            "identifiers": [
+                {
+                    "type": "cwe",
+                    "name": "CWE-22",
+                    "value": "22",
+                    "url": "https://cwe.mitre.org/data/definitions/22.html"
+                }
+            ]
+        
+        },
+        {
+            "category": "sast",
+            "description": "This API (java/io/File.\u003cinit\u003e(Ljava/lang/String;Ljava/lang/String;)V) reads a file whose location might be specified by user input",
+            "cve": "",
+            "scanner": {
+                "id": "baseline",
+                "name": "baseline"
+            },
+            "location": {
+                "file": "src/main/java/org/owasp/webgoat/lessons/path_traversal/ProfileUploadBase.java",
+                "start_line": 36
+            },
+            "identifiers": [
+                {
+                    "type": "cwe",
+                    "name": "CWE-22",
+                    "value": "22",
+                    "url": "https://cwe.mitre.org/data/definitions/22.html"
+                }
+            ]
+        },
+        {
+            "category": "sast",
+            "description": "This API (java/io/File.\u003cinit\u003e(Ljava/io/File;Ljava/lang/String;)V) reads a file whose location might be specified by user input",
+            "cve": "d82ddb6165db8941f5932a738e3b3d48:PATH_TRAVERSAL_IN:src/main/java/org/owasp/webgoat/lessons/path_traversal/ProfileZipSlip.java:60",
+            "severity": "Medium",
+            "confidence": "Medium",
+            "scanner": {
+                "id": "baseline",
+                "name": "baseline"
+            },
+            "location": {
+                "file": "src/main/java/org/owasp/webgoat/lessons/path_traversal/ProfileZipSlip.java",
+                "start_line": 59,
+                "end_line": 62
+            },
+            "identifiers": [
+                {
+                    "type": "find_sec_bugs_type",
+                    "name": "Find Security Bugs-PATH_TRAVERSAL_IN",
+                    "value": "PATH_TRAVERSAL_IN",
+                    "url": "https://find-sec-bugs.github.io/bugs.htm#PATH_TRAVERSAL_IN"
+                },
+                {
+                    "type": "cwe",
+                    "name": "CWE-22",
+                    "value": "22",
+                    "url": "https://cwe.mitre.org/data/definitions/22.html"
+                }
+            ]
+        }
+    ]
+}

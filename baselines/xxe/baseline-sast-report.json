@@ -1,0 +1,155 @@
+{
+    "vulnerabilities": [
+        {
+            "category": "sast",
+            "description": "Cryptographic keys should not be kept in the source code. The source code can be widely shared\nin an enterprise environment, and is certainly shared in open source. To be managed safely,\npasswords and secret keys should be stored in separate configuration files or keystores.\n",
+            "cve": "",
+            "scanner": {
+                "id": "baseline",
+                "name": "baseline"
+            },
+            "location": {
+                "file": "src/main/java/org/owasp/webgoat/lessons/xxe/User.java",
+                "start_line": 31
+            },
+            "identifiers": [
+                {
+                    "type": "cwe",
+                    "name": "CWE-321",
+                    "value": "321",
+                    "url": "https://cwe.mitre.org/data/definitions/321.html"
+                }
+            ]
+        },
+        {
+            "category": "sast",
+            "description": "Unrestricted Spring's RequestMapping makes the method vulnerable to CSRF attacks",
+            "cve": "",
+            "scanner": {
+                "id": "baseline",
+                "name": "baseline"
+            },
+            "location": {
+                "file": "src/main/java/org/owasp/webgoat/lessons/xxe/SimpleXXE.java",
+                "start_line": 94
+            },
+            "identifiers": [
+                {
+                    "type": "cwe",
+                    "name": "CWE-352",
+                    "value": "352",
+                    "url": "https://cwe.mitre.org/data/definitions/352.html"
+                }
+            ]
+        },
+        {
+            "category": "sast",
+            "description": "This API (java/io/File.\u003cinit\u003e(Ljava/lang/String;Ljava/lang/String;)V) reads a file whose location might be specified by user input",
+            "cve": "",
+            "scanner": {
+                "id": "baseline",
+                "name": "baseline"
+            },
+            "location": {
+                "file": "src/main/java/org/owasp/webgoat/lessons/xxe/BlindSendFileAssignment.java",
+                "start_line": 67
+            },
+            "identifiers": [
+                {
+                    "type": "cwe",
+                    "name": "CWE-22",
+                    "value": "22",
+                    "url": "https://cwe.mitre.org/data/definitions/22.html"
+                }
+            ]
+        
+        },
+        {
+            "category": "sast",
+            "description": "The XML parsing is vulnerable to XML External Entity attacks",
+            "cve": "",
+            "scanner": {
+                "id": "baseline",
+                "name": "baseline"
+            },
+            "location": {
+                "file": "src/main/java/org/owasp/webgoat/lessons/xxe/CommentsCache.java",
+                "start_line": 102
+            },
+            "identifiers": [
+                {
+                    "type": "cwe",
+                    "name": "CWE-611",
+                    "value": "611",
+                    "url": "https://cwe.mitre.org/data/definitions/611.html"
+                }
+            ]
+        
+        },
+        {
+            "category": "sast",
+            "description": "This API (java/io/File.\u003cinit\u003e(Ljava/lang/String;Ljava/lang/String;)V) reads a file whose location might be specified by user input",
+            "cve": "",
+            "scanner": {
+                "id": "baseline",
+                "name": "baseline"
+            },
+            "location": {
+                "file": "src/main/java/org/owasp/webgoat/lessons/xxe/Ping.java",
+                "start_line": 52
+            },
+            "identifiers": [
+                {
+                    "type": "cwe",
+                    "name": "CWE-22",
+                    "value": "22",
+                    "url": "https://cwe.mitre.org/data/definitions/22.html"
+                }
+            ]
+        
+        },
+        {
+            "category": "sast",
+            "description": "This use of org/slf4j/Logger.debug(Ljava/lang/String;)V might be used to include CRLF characters into log messages",
+            "cve": "",
+            "scanner": {
+                "id": "baseline",
+                "name": "baseline"
+            },
+            "location": {
+                "file": "src/main/java/org/owasp/webgoat/lessons/xxe/Ping.java",
+                "start_line": 50
+            },
+            "identifiers": [
+                {
+                    "type": "cwe",
+                    "name": "CWE-117",
+                    "value": "117",
+                    "url": "https://cwe.mitre.org/data/definitions/117.html"
+                }
+            ]
+        },
+        {
+            "category": "sast",
+            "description": "This API (java/io/File.\u003cinit\u003e(Ljava/lang/String;Ljava/lang/String;)V) reads a file whose location might be specified by user input",
+            "cve": "",
+            "scanner": {
+                "id": "baseline",
+                "name": "baseline"
+            },
+            "location": {
+                "file": "src/main/java/org/owasp/webgoat/lessons/xxe/Ping.java",
+                "start_line": 52
+            },
+            "identifiers": [
+                {
+                    "type": "cwe",
+                    "name": "CWE-22",
+                    "value": "22",
+                    "url": "https://cwe.mitre.org/data/definitions/22.html"
+                }
+            ]
+        
+        }
+    ]
+}

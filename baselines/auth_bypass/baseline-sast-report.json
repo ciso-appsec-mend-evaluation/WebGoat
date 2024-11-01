@@ -1,0 +1,27 @@
+{
+    "vulnerabilities": [
+        {
+            "id": "55b17cc278b496e1633a80709cec483271b55ab5f47702f73047802f6ed8d6e1",
+            "category": "sast",
+            "description": "The Servlet can read GET and POST parameters from various methods. The value obtained should be\nconsidered unsafe. You may need to validate or sanitize those values before passing them to\nsensitive APIs\n",
+            "cve": "",
+            "severity": "Medium",
+            "scanner": {
+              "id": "semgrep",
+              "name": "Semgrep"
+            },
+            "location": {
+              "file": "WebGoat/src/main/java/org/owasp/webgoat/lessons/auth_bypass/VerifyAccount.java",
+              "start_line": 89
+            },
+            "identifiers": [
+              {
+                "type": "cwe",
+                "name": "CWE-20",
+                "value": "20",
+                "url": "https://cwe.mitre.org/data/definitions/20.html"
+              }
+            ]
+          }
+    ]
+}

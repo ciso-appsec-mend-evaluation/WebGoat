@@ -1,0 +1,46 @@
+{
+    "vulnerabilities": [
+        {
+            "category": "sast",
+            "description": "Object deserialization is used in org.owasp.webgoat.lessons.deserialization.InsecureDeserializationTask.completed(String)",
+            "cve": "",
+            "scanner": {
+                "id": "baseline",
+                "name": "baseline"
+            },
+            "location": {
+                "file": "src/main/java/org/owasp/webgoat/lessons/deserialization/InsecureDeserializationTask.java",
+                "start_line": 56
+            },
+            "identifiers": [
+                {
+                    "type": "cwe",
+                    "name": "CWE-502",
+                    "value": "502",
+                    "url": "https://cwe.mitre.org/data/definitions/502.html"
+                }
+            ]
+        },
+        {
+            "category": "sast",
+            "description": "Object deserialization is used in org.owasp.webgoat.lessons.deserialization.SerializationHelper",
+            "cve": "",
+            "scanner": {
+                "id": "baseline",
+                "name": "baseline"
+            },
+            "location": {
+                "file": "src/main/java/org/owasp/webgoat/lessons/deserialization/SerializationHelper.java",
+                "start_line": 21
+            },
+            "identifiers": [
+                {
+                    "type": "cwe",
+                    "name": "CWE-502",
+                    "value": "502",
+                    "url": "https://cwe.mitre.org/data/definitions/502.html"
+                }
+            ]
+        }
+    ]
+}

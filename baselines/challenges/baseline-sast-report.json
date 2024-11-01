@@ -1,0 +1,153 @@
+{
+    "vulnerabilities": [
+        {
+            "category": "sast",
+            "description": "This API (java/io/File.\u003cinit\u003e(Ljava/lang/String;)V) reads a file whose location might be specified by user input",
+            "cve": "",
+            "scanner": {
+                "id": "baseline",
+                "name": "baseline"
+            },
+            "location": {
+                "file": "WebGoat/src/main/java/org/owasp/webgoat/lessons/challenges/challenge7/MD5.java",
+                "start_line": 54
+            },
+            "identifiers": [
+                {
+                    "type": "cwe",
+                    "name": "CWE-22",
+                    "value": "22",
+                    "url": "https://cwe.mitre.org/data/definitions/22.html"
+                }
+            ]
+        },
+        {
+            "category": "sast",
+            "description": "This random generator (java.util.Random) is predictable",
+            "cve": "",
+            "scanner": {
+                "id": "baseline",
+                "name": "baseline"
+            },
+            "location": {
+                "file": "WebGoat/src/main/java/org/owasp/webgoat/lessons/challenges/challenge7/PasswordResetLink.java",
+                "start_line": 14
+            },
+            "identifiers": [
+                {
+                    "type": "cwe",
+                    "name": "CWE-330",
+                    "value": "330",
+                    "url": "https://cwe.mitre.org/data/definitions/330.html"
+                }
+            ]
+        },
+        {
+            "category": "sast",
+            "description": "Improper handling of Unicode transformations such as case mapping and normalization.",
+            "cve": "",
+            "scanner": {
+                "id": "baseline",
+                "name": "baseline"
+            },
+            "location": {
+                "file": "WebGoat/src/main/java/org/owasp/webgoat/lessons/challenges/challenge7/PasswordResetLink.java",
+                "start_line": 15
+            },
+            "identifiers": [
+                {
+                    "type": "cwe",
+                    "name": "CWE-176",
+                    "value": "176",
+                    "url": "https://cwe.mitre.org/data/definitions/176.html"
+                }
+            ]
+        },
+        {
+            "category": "sast",
+            "description": "The method identified is susceptible to injection. The input should be validated and properly\nescaped.\n",
+            "cve": "",
+            "scanner": {
+              "id": "baseline",
+              "name": "baseline"
+            },
+            "location": {
+              "file": "WebGoat/src/main/java/org/owasp/webgoat/lessons/challenges/challenge5/Assignment5.java",
+              "start_line": 59
+            },
+            "identifiers": [
+              {
+                "type": "cwe",
+                "name": "CWE-89",
+                "value": "89",
+                "url": "https://cwe.mitre.org/data/definitions/89.html"
+              }
+            ]
+          },
+          {
+            "category": "sast",
+            "description": "Unrestricted Spring's RequestMapping makes the method vulnerable to CSRF attacks",
+            "cve": "",
+            "scanner": {
+                "id": "baseline",
+                "name": "baseline"
+            },
+            "location": {
+                "file": "WebGoat/src/main/java/org/owasp/webgoat/lessons/challenges/challenge1/ImageServlet.java",
+                "start_line": 25,
+                "end_line": 34
+            },
+            "identifiers": [
+                {
+                    "type": "cwe",
+                    "name": "CWE-352",
+                    "value": "352",
+                    "url": "https://cwe.mitre.org/data/definitions/352.html"
+                }
+            ]
+        },
+        {
+            "category": "sast",
+            "description": "Request header can easily be altered by the client",
+            "cve": "",
+            "scanner": {
+                "id": "baseline",
+                "name": "baseline"
+            },
+            "location": {
+                "file": "WebGoat/src/main/java/org/owasp/webgoat/lessons/challenges/challenge1/Assignment1.java",
+                "start_line": 62
+            },
+            "identifiers": [
+                {
+                    "type": "cwe",
+                    "name": "CWE-20",
+                    "value": "20",
+                    "url": "https://cwe.mitre.org/data/definitions/20.html"
+                }
+            ]
+        },
+        {
+            "category": "sast",
+            "description": "Cryptographic keys should not be kept in the source code. The source code can be widely shared\nin an enterprise environment, and is certainly shared in open source. To be managed safely,\npasswords and secret keys should be stored in separate configuration files or keystores.\n",
+            "cve": "",
+            "scanner": {
+              "id": "baseline",
+              "name": "baseline"
+            },
+            "location": {
+              "file": "WebGoat/src/main/java/org/owasp/webgoat/lessons/challenges/SolutionConstants.java",
+              "start_line": 34,
+              "end_line": 36
+            },
+            "identifiers": [
+              {
+                "type": "cwe",
+                "name": "CWE-321",
+                "value": "321",
+                "url": "https://cwe.mitre.org/data/definitions/321.html"
+              }
+            ]
+          }
+    ]
+}

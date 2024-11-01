@@ -1,0 +1,25 @@
+{
+    "vulnerabilities": [
+        {
+            "category": "sast",
+            "description": "This usage of java/lang/Runtime.exec(Ljava/lang/String;)Ljava/lang/Process; can be vulnerable to Command Injection",
+            "cve": "",
+            "scanner": {
+                "id": "baseline",
+                "name": "baseline"
+            },
+            "location": {
+                "file": "src/main/java/org/dummy/insecure/framework/VulnerableTaskHolder.java",
+                "start_line": 60
+            },
+            "identifiers": [
+                {
+                    "type": "cwe",
+                    "name": "CWE-78",
+                    "value": "78",
+                    "url": "https://cwe.mitre.org/data/definitions/78.html"
+                }
+            ]
+        }
+    ]
+}

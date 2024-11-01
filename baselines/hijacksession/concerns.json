@@ -1,0 +1,69 @@
+{ // This does use non-secure random generator. However it is used in a weird setting, so I am unsure if it can be exploited. Any ideas?
+    "id": "371e6708f89600ddb714e95295388b3c07df9431b51164e566e86851b246d57f",
+    "category": "sast",
+    "name": "Predictable pseudorandom number generator",
+    "message": "Predictable pseudorandom number generator",
+    "description": "This random generator (java.util.concurrent.ThreadLocalRandom) is predictable",
+    "cve": "c76aa3f99369cfe9296543073c11cd97:PREDICTABLE_RANDOM:src/main/java/org/owasp/webgoat/lessons/hijacksession/cas/HijackSessionAuthenticationProvider.java:82",
+    "severity": "Medium",
+    "confidence": "Medium",
+    "scanner": {
+        "id": "find_sec_bugs",
+        "name": "Find Security Bugs"
+    },
+    "location": {
+        "file": "src/main/java/org/owasp/webgoat/lessons/hijacksession/cas/HijackSessionAuthenticationProvider.java",
+        "start_line": 82,
+        "class": "org.owasp.webgoat.lessons.hijacksession.cas.HijackSessionAuthenticationProvider",
+        "method": "authorizedUserAutoLogin"
+    },
+    "identifiers": [
+        {
+            "type": "find_sec_bugs_type",
+            "name": "Find Security Bugs-PREDICTABLE_RANDOM",
+            "value": "PREDICTABLE_RANDOM",
+            "url": "https://find-sec-bugs.github.io/bugs.htm#PREDICTABLE_RANDOM"
+        },
+        {
+            "type": "cwe",
+            "name": "CWE-330",
+            "value": "330",
+            "url": "https://cwe.mitre.org/data/definitions/330.html"
+        }
+    ]
+},
+{ // The location is incorrect, I think it refers to src/main/java/org/owasp/webgoat/lessons/hijacksession/HijackSessionAssignment.java:85
+  // Is HTTP response splitting possible here? It seems that the cookie value is a randomly generated ID, so I doubt it could result in an HTTP response splitting.
+    "id": "7ab8d86c81bd617f815d06d12d1910669e93d0a9161fcc2d689858de3ab913b8",
+    "category": "sast",
+    "name": "Potential HTTP Response Splitting",
+    "message": "Potential HTTP Response Splitting",
+    "description": "This use of javax/servlet/http/Cookie.\u003cinit\u003e(Ljava/lang/String;Ljava/lang/String;)V might be used to include CRLF characters into HTTP headers",
+    "cve": "f7a0aa32a3a5b3a84aa34560c089fbb5:HTTP_RESPONSE_SPLITTING:src/main/java/org/owasp/webgoat/lessons/hijacksession/cas/Authentication.java:45",
+    "severity": "Low",
+    "confidence": "Low",
+    "scanner": {
+        "id": "find_sec_bugs",
+        "name": "Find Security Bugs"
+    },
+    "location": {
+        "file": "src/main/java/org/owasp/webgoat/lessons/hijacksession/cas/Authentication.java",
+        "start_line": 45,
+        "class": "org.owasp.webgoat.lessons.hijacksession.HijackSessionAssignment",
+        "method": "setCookie"
+    },
+    "identifiers": [
+        {
+            "type": "find_sec_bugs_type",
+            "name": "Find Security Bugs-HTTP_RESPONSE_SPLITTING",
+            "value": "HTTP_RESPONSE_SPLITTING",
+            "url": "https://find-sec-bugs.github.io/bugs.htm#HTTP_RESPONSE_SPLITTING"
+        },
+        {
+            "type": "cwe",
+            "name": "CWE-113",
+            "value": "113",
+            "url": "https://cwe.mitre.org/data/definitions/113.html"
+        }
+    ]
+}

@@ -1,0 +1,47 @@
+{
+    "vulnerabilities": [
+        {
+            "category": "sast",
+            "description": "A new cookie is created without the HttpOnly flag set. The HttpOnly flag is a directive to the\nbrowser to make sure that the cookie can not be red by malicious script. When a user is the\ntarget of a \"Cross-Site Scripting\", the attacker would benefit greatly from getting the session\nid for example.\n",
+            "cve": "",
+            "scanner": {
+                "id": "baseline",
+                "name": "baseline"
+            },
+            "location": {
+                "file": "src/main/java/org/owasp/webgoat/lessons/spoofcookie/SpoofCookieAssignment.java",
+                "start_line": 93,
+                "end_line": 96
+            },
+            "identifiers": [
+                {
+                    "type": "cwe",
+                    "name": "CWE-1004",
+                    "value": "1004",
+                    "url": "https://cwe.mitre.org/data/definitions/1004.html"
+                }
+            ]
+        },
+        {
+            "category": "sast",
+            "description": "Sensitive data is inappropriatelly encrypted",
+            "cve": "",
+            "scanner": {
+                "id": "baseline",
+                "name": "baseline"
+            },
+            "location": {
+                "file": "src/main/java/org/owasp/webgoat/lessons/spoofcookie/SpoofCookieAssignment.java",
+                "start_line": 92
+            },
+            "identifiers": [
+                {
+                    "type": "cwe",
+                    "name": "CWE-311",
+                    "value": "311",
+                    "url": "https://cwe.mitre.org/data/definitions/311.html"
+                }
+            ]
+        }
+    ]
+}

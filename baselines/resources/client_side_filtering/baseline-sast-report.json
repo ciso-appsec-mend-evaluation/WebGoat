@@ -1,0 +1,48 @@
+{
+    "vulnerabilities": [
+        {
+            "category": "sast",
+            "description": "Bracket object notation with user input is present, this might allow an attacker to access all properties of the object and even it's prototype, leading to possible code execution.",
+            "cve": "",
+            "scanner": {
+                "id": "baseline",
+                "name": "baseline"
+            },
+            "location": {
+                "file": "src/main/resources/lessons/client_side_filtering/js/clientSideFiltering.js",
+                "start_line": 27,
+                "end_line": 32
+            },
+            "identifiers": [
+                {
+                    "type": "cwe",
+                    "name": "CWE-74",
+                    "value": "74",
+                    "url": "https://cwe.mitre.org/data/definitions/74.html"
+                }
+            ]
+        },
+        {
+            "category": "sast",
+            "description": "Cross Site Scripting",
+            "cve": "",
+            "scanner": {
+                "id": "baseline",
+                "name": "baseline"
+            },
+            "location": {
+                "file": "src/main/resources/lessons/client_side_filtering/js/clientSideFiltering.js",
+                "start_line": 6,
+                "end_line": 6
+            },
+            "identifiers": [
+                {
+                    "type": "cwe",
+                    "name": "CWE-74",
+                    "value": "74",
+                    "url": "https://cwe.mitre.org/data/definitions/74.html"
+                }
+            ]
+        }
+    ]
+}

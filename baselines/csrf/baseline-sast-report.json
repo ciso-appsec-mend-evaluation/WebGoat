@@ -1,0 +1,26 @@
+{
+    "vulnerabilities": [
+        {
+            "category": "sast",
+            "description": "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')",
+            "cve": "",
+            "scanner": {
+                "id": "baseline",
+                "name": "baseline"
+            },
+            "location": {
+                "file": "WebGoat/src/main/resources/lessons/csrf/js/csrf-review.js",
+                "start_line": 37,
+                "end_line": 41
+            },
+            "identifiers": [
+                {
+                    "type": "cwe",
+                    "name": "CWE-79",
+                    "value": "79",
+                    "url": "https://cwe.mitre.org/data/definitions/79.html"
+                }
+            ]
+        }
+    ]
+}

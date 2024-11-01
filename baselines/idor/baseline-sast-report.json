@@ -1,0 +1,151 @@
+{
+    "vulnerabilities": [
+        {
+            "category": "sast",
+            "description": "Hard coded password found",
+            "cve": "",
+            "scanner": {
+                "id": "baseline",
+                "name": "baseline"
+            },
+            "location": {
+                "file": "src/main/java/org/owasp/webgoat/lessons/idor/IDORLogin.java",
+                "start_line": 52
+            },
+            "identifiers": [
+                {
+                    "type": "cwe",
+                    "name": "CWE-259",
+                    "value": "259",
+                    "url": "https://cwe.mitre.org/data/definitions/259.html"
+                }
+            ]
+        },
+        {
+            "category": "sast",
+            "description": "Hard coded password found",
+            "cve": "",
+            "scanner": {
+                "id": "baseline",
+                "name": "baseline"
+            },
+            "location": {
+                "file": "src/main/java/org/owasp/webgoat/lessons/idor/IDORLogin.java",
+                "start_line": 46
+            },
+            "identifiers": [
+                {
+                    "type": "cwe",
+                    "name": "CWE-259",
+                    "value": "259",
+                    "url": "https://cwe.mitre.org/data/definitions/259.html"
+                }
+            ]
+        },
+        {
+            "category": "sast",
+            "description": "Improper handling of Unicode transformations such as case mapping and normalization.",
+            "cve": "",
+            "scanner": {
+                "id": "baseline",
+                "name": "baseline"
+            },
+            "location": {
+                "file": "src/main/java/org/owasp/webgoat/lessons/idor/IDOREditOtherProfiile.java",
+                "start_line": 58
+            },
+            "identifiers": [
+                {
+                    "type": "cwe",
+                    "name": "CWE-176",
+                    "value": "176",
+                    "url": "https://cwe.mitre.org/data/definitions/176.html"
+                }
+            ]
+        },
+        {
+            "category": "sast",
+            "description": "Improper handling of Unicode transformations such as case mapping and normalization.",
+            "cve": "",
+            "scanner": {
+                "id": "baseline",
+                "name": "baseline"
+            },
+            "location": {
+                "file": "src/main/java/org/owasp/webgoat/lessons/idor/IDORDiffAttributes.java",
+                "start_line": 45                
+            },
+            "identifiers": [
+                {
+                    "type": "cwe",
+                    "name": "CWE-176",
+                    "value": "176",
+                    "url": "https://cwe.mitre.org/data/definitions/176.html"
+                }
+            ]
+        },
+        {
+            "category": "sast",
+            "description": "Improper handling of Unicode transformations such as case mapping and normalization.",
+            "cve": "",
+            "scanner": {
+                "id": "baseline",
+                "name": "baseline"
+            },
+            "location": {
+                "file": "src/main/java/org/owasp/webgoat/lessons/idor/IDORDiffAttributes.java",
+                "start_line": 46                
+            },
+            "identifiers": [
+                {
+                    "type": "cwe",
+                    "name": "CWE-176",
+                    "value": "176",
+                    "url": "https://cwe.mitre.org/data/definitions/176.html"
+                }
+            ]
+        },
+        {
+            "category": "sast",
+            "description": "Improper handling of Unicode transformations such as case mapping and normalization.",
+            "cve": "",
+            "scanner": {
+                "id": "baseline",
+                "name": "baseline"
+            },
+            "location": {
+                "file": "src/main/java/org/owasp/webgoat/lessons/idor/IDOREditOtherProfiile.java",
+                "start_line": 65
+            },
+            "identifiers": [
+                {
+                    "type": "cwe",
+                    "name": "CWE-176",
+                    "value": "176",
+                    "url": "https://cwe.mitre.org/data/definitions/176.html"
+                }
+            ]
+        },
+        {
+            "category": "sast",
+            "description": "Improper handling of Unicode transformations such as case mapping and normalization.",
+            "cve": "",
+            "scanner": {
+                "id": "baseline",
+                "name": "baseline"
+            },
+            "location": {
+                "file": "src/main/java/org/owasp/webgoat/lessons/idor/IDOREditOtherProfiile.java",
+                "start_line": 72
+            },
+            "identifiers": [
+                {
+                    "type": "cwe",
+                    "name": "CWE-176",
+                    "value": "176",
+                    "url": "https://cwe.mitre.org/data/definitions/176.html"
+                }
+            ]
+        }
+    ]
+}

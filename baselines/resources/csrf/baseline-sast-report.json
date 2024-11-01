@@ -1,0 +1,26 @@
+{
+    "vulnerabilities": [
+        {
+            "category": "sast",
+            "description": "xss",
+            "cve": "",
+            "scanner": {
+                "id": "baseline",
+                "name": "baseline"
+            },
+            "location": {
+                "file": "src/main/resources/lessons/csrf/js/csrf-review.js",
+                "start_line": 37,
+                "end_line": 41
+            },
+            "identifiers": [
+                {
+                    "type": "cwe",
+                    "name": "CWE-74",
+                    "value": "74",
+                    "url": "https://cwe.mitre.org/data/definitions/74.html"
+                }
+            ]
+        }
+    ]
+}

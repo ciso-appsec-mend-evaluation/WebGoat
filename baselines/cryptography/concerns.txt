@@ -1,0 +1,261 @@
+1. Can somebody confirm if this is TP
+{
+      "id": "5f4534a429cb4aaad23558a7d637a3e9ccd60804c4463449abbfd22f7c73e47b",
+      "category": "sast",
+      "message": "Use of Hard-coded Cryptographic Key",
+      "description": "Cryptographic keys should not be kept in the source code. The source code can be widely shared\nin an enterprise environment, and is certainly shared in open source. To be managed safely,\npasswords and secret keys should be stored in separate configuration files or keystores.\n",
+      "cve": "",
+      "severity": "Critical",
+      "scanner": {
+        "id": "semgrep",
+        "name": "Semgrep"
+      },
+      "location": {
+        "file": "src/main/java/org/owasp/webgoat/lessons/cryptography/CryptoUtil.java",
+        "start_line": 130
+      },
+      "identifiers": [
+        {
+          "type": "semgrep_id",
+          "name": "find_sec_bugs.HARD_CODE_KEY-1",
+          "value": "find_sec_bugs.HARD_CODE_KEY-1"
+        },
+        {
+          "type": "cwe",
+          "name": "CWE-321",
+          "value": "321",
+          "url": "https://cwe.mitre.org/data/definitions/321.html"
+        },
+        {
+          "type": "find_sec_bugs_type",
+          "name": "Find Security Bugs-HARD_CODE_KEY",
+          "value": "HARD_CODE_KEY"
+        }
+      ],
+      "tracking": {
+        "type": "source",
+        "items": [
+          {
+            "file": "src/main/java/org/owasp/webgoat/lessons/cryptography/CryptoUtil.java",
+            "line_start": 130,
+            "line_end": 130,
+            "signatures": [
+              {
+                "algorithm": "scope_offset",
+                "value": "src/main/java/org/owasp/webgoat/lessons/cryptography/CryptoUtil.java|CryptoUtil[0]|PrivateKey[0]:8"
+              }
+            ]
+          }
+        ]
+      }
+    }
+
+
+2. Is this a FP? Same for lines 90, 94 and 95
+{
+      "id": "85e66dad42ba361d0f21addbb1dd7af4670d67ee29f8073604986008d1323d4a",
+      "category": "sast",
+      "message": "Use of Hard-coded Cryptographic Key",
+      "description": "Cryptographic keys should not be kept in the source code. The source code can be widely shared\nin an enterprise environment, and is certainly shared in open source. To be managed safely,\npasswords and secret keys should be stored in separate configuration files or keystores.\n",
+      "cve": "",
+      "severity": "Medium",
+      "scanner": {
+        "id": "semgrep",
+        "name": "Semgrep"
+      },
+      "location": {
+        "file": "src/main/java/org/owasp/webgoat/lessons/cryptography/HashingAssignment.java",
+        "start_line": 89
+      },
+      "identifiers": [
+        {
+          "type": "semgrep_id",
+          "name": "find_sec_bugs.HARD_CODE_KEY-4",
+          "value": "find_sec_bugs.HARD_CODE_KEY-4"
+        },
+        {
+          "type": "cwe",
+          "name": "CWE-321",
+          "value": "321",
+          "url": "https://cwe.mitre.org/data/definitions/321.html"
+        },
+        {
+          "type": "find_sec_bugs_type",
+          "name": "Find Security Bugs-HARD_CODE_KEY",
+          "value": "HARD_CODE_KEY"
+        }
+      ],
+      "tracking": {
+        "type": "source",
+        "items": [
+          {
+            "file": "src/main/java/org/owasp/webgoat/lessons/cryptography/HashingAssignment.java",
+            "line_start": 89,
+            "line_end": 89,
+            "signatures": [
+              {
+                "algorithm": "scope_offset",
+                "value": "src/main/java/org/owasp/webgoat/lessons/cryptography/HashingAssignment.java|HashingAssignment[0]|AttackResult[0]:8"
+              }
+            ]
+          }
+        ]
+      }
+    }
+
+
+3. Is this a FP?
+{
+      "id": "849d811e96ba12933058cdce3316d8c114265bed43def1cc4689bd6469106312",
+      "category": "sast",
+      "message": "Use of Hard-coded Cryptographic Key",
+      "description": "Cryptographic keys should not be kept in the source code. The source code can be widely shared\nin an enterprise environment, and is certainly shared in open source. To be managed safely,\npasswords and secret keys should be stored in separate configuration files or keystores.\n",
+      "cve": "",
+      "severity": "Medium",
+      "scanner": {
+        "id": "semgrep",
+        "name": "Semgrep"
+      },
+      "location": {
+        "file": "src/main/java/org/owasp/webgoat/lessons/cryptography/SecureDefaultsAssignment.java",
+        "start_line": 42
+      },
+      "identifiers": [
+        {
+          "type": "semgrep_id",
+          "name": "find_sec_bugs.HARD_CODE_KEY-4",
+          "value": "find_sec_bugs.HARD_CODE_KEY-4"
+        },
+        {
+          "type": "cwe",
+          "name": "CWE-321",
+          "value": "321",
+          "url": "https://cwe.mitre.org/data/definitions/321.html"
+        },
+        {
+          "type": "find_sec_bugs_type",
+          "name": "Find Security Bugs-HARD_CODE_KEY",
+          "value": "HARD_CODE_KEY"
+        }
+      ],
+      "tracking": {
+        "type": "source",
+        "items": [
+          {
+            "file": "src/main/java/org/owasp/webgoat/lessons/cryptography/SecureDefaultsAssignment.java",
+            "line_start": 42,
+            "line_end": 42,
+            "signatures": [
+              {
+                "algorithm": "scope_offset",
+                "value": "src/main/java/org/owasp/webgoat/lessons/cryptography/SecureDefaultsAssignment.java|SecureDefaultsAssignment[0]|AttackResult[0]:3"
+              }
+            ]
+          }
+        ]
+      }
+    }
+
+4. Is this a FP?
+{
+      "id": "31e2b92a9292706c4b38624d21bab31d83a6ef20722158c8f9c84aaf993a2b12",
+      "category": "sast",
+      "message": "Trust Boundary Violation",
+      "description": "A trust boundary can be thought of as line drawn through a program. On one side\nof the line, data is untrusted. On the other side of the line, data is assumed\nto be trustworthy. The purpose of validation logic is to allow data to safely\ncross the trust boundary - to move from untrusted to trusted. A trust boundary\nviolation occurs when a program blurs the line between what is trusted and what\nis u",
+      "cve": "",
+      "severity": "Medium",
+      "scanner": {
+        "id": "semgrep",
+        "name": "Semgrep"
+      },
+      "location": {
+        "file": "src/main/java/org/owasp/webgoat/lessons/cryptography/SigningAssignment.java",
+        "start_line": 56
+      },
+      "identifiers": [
+        {
+          "type": "semgrep_id",
+          "name": "find_sec_bugs.TRUST_BOUNDARY_VIOLATION-1",
+          "value": "find_sec_bugs.TRUST_BOUNDARY_VIOLATION-1"
+        },
+        {
+          "type": "cwe",
+          "name": "CWE-501",
+          "value": "501",
+          "url": "https://cwe.mitre.org/data/definitions/501.html"
+        },
+        {
+          "type": "find_sec_bugs_type",
+          "name": "Find Security Bugs-TRUST_BOUNDARY_VIOLATION",
+          "value": "TRUST_BOUNDARY_VIOLATION"
+        }
+      ],
+      "tracking": {
+        "type": "source",
+        "items": [
+          {
+            "file": "src/main/java/org/owasp/webgoat/lessons/cryptography/SigningAssignment.java",
+            "line_start": 56,
+            "line_end": 56,
+            "signatures": [
+              {
+                "algorithm": "scope_offset",
+                "value": "src/main/java/org/owasp/webgoat/lessons/cryptography/SigningAssignment.java|SigningAssignment[0]|String[0]:8"
+              }
+            ]
+          }
+        ]
+      }
+    }
+
+5. Is this a FP?
+{
+      "id": "cc54f998226660d103e96733a2bb949157d7ff80f5fec60639d3490aec8f51b8",
+      "category": "sast",
+      "message": "Use of Hard-coded Cryptographic Key",
+      "description": "Cryptographic keys should not be kept in the source code. The source code can be widely shared\nin an enterprise environment, and is certainly shared in open source. To be managed safely,\npasswords and secret keys should be stored in separate configuration files or keystores.\n",
+      "cve": "",
+      "severity": "Medium",
+      "scanner": {
+        "id": "semgrep",
+        "name": "Semgrep"
+      },
+      "location": {
+        "file": "src/main/java/org/owasp/webgoat/lessons/cryptography/XOREncodingAssignment.java",
+        "start_line": 40
+      },
+      "identifiers": [
+        {
+          "type": "semgrep_id",
+          "name": "find_sec_bugs.HARD_CODE_KEY-4",
+          "value": "find_sec_bugs.HARD_CODE_KEY-4"
+        },
+        {
+          "type": "cwe",
+          "name": "CWE-321",
+          "value": "321",
+          "url": "https://cwe.mitre.org/data/definitions/321.html"
+        },
+        {
+          "type": "find_sec_bugs_type",
+          "name": "Find Security Bugs-HARD_CODE_KEY",
+          "value": "HARD_CODE_KEY"
+        }
+      ],
+      "tracking": {
+        "type": "source",
+        "items": [
+          {
+            "file": "src/main/java/org/owasp/webgoat/lessons/cryptography/XOREncodingAssignment.java",
+            "line_start": 40,
+            "line_end": 40,
+            "signatures": [
+              {
+                "algorithm": "scope_offset",
+                "value": "src/main/java/org/owasp/webgoat/lessons/cryptography/XOREncodingAssignment.java|XOREncodingAssignment[0]|AttackResult[0]:3"
+              }
+            ]
+          }
+        ]
+      }
+    }
